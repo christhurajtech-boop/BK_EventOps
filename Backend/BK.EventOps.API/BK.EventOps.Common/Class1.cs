@@ -1,0 +1,3 @@
+﻿namespace BK.EventOps.Common
+{ 
+}

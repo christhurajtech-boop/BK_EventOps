@@ -1,0 +1,11 @@
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\bin\Debug\net10.0\BK.EventOps.Services.deps.json
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\bin\Debug\net10.0\BK.EventOps.Services.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\bin\Debug\net10.0\BK.EventOps.Services.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\obj\Debug\net10.0\BK.EventOps.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\obj\Debug\net10.0\BK.EventOps.Services.AssemblyInfoInputs.cache
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\obj\Debug\net10.0\BK.EventOps.Services.AssemblyInfo.cs
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\obj\Debug\net10.0\BK.EventOps.Services.csproj.CoreCompileInputs.cache
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\obj\Debug\net10.0\BK.EventOps.Services.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\obj\Debug\net10.0\refint\BK.EventOps.Services.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\obj\Debug\net10.0\BK.EventOps.Services.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Services\obj\Debug\net10.0\ref\BK.EventOps.Services.dll

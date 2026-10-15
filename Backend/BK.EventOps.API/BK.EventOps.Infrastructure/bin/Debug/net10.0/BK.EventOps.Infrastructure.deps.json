@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "BK.EventOps.Infrastructure/1.0.0": {
+        "runtime": {
+          "BK.EventOps.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BK.EventOps.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

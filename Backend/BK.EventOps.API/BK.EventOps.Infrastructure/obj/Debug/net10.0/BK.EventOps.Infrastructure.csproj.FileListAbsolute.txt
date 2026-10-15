@@ -1,0 +1,11 @@
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\bin\Debug\net10.0\BK.EventOps.Infrastructure.deps.json
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\bin\Debug\net10.0\BK.EventOps.Infrastructure.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\bin\Debug\net10.0\BK.EventOps.Infrastructure.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.EventOps.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.EventOps.Infrastructure.AssemblyInfoInputs.cache
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.EventOps.Infrastructure.AssemblyInfo.cs
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.EventOps.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.EventOps.Infrastructure.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\refint\BK.EventOps.Infrastructure.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.EventOps.Infrastructure.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\ref\BK.EventOps.Infrastructure.dll

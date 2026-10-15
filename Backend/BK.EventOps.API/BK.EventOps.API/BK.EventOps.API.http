@@ -1,0 +1,6 @@
+@BK.EventOps.API_HostAddress = http://localhost:5174
+
+GET {{BK.EventOps.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
