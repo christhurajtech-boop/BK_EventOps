@@ -33,3 +33,12 @@ D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\D
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\BK.EventOps.API.pdb
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\BK.EventOps.API.genruntimeconfig.cache
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\ref\BK.EventOps.API.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\bin\Debug\net10.0\BK.EventOps.Application.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\bin\Debug\net10.0\BK.EventOps.Common.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\bin\Debug\net10.0\BK.EventOps.Domain.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\bin\Debug\net10.0\BK.EventOps.Infrastructure.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\bin\Debug\net10.0\BK.EventOps.Application.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\bin\Debug\net10.0\BK.EventOps.Common.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\bin\Debug\net10.0\BK.EventOps.Domain.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\bin\Debug\net10.0\BK.EventOps.Infrastructure.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\BK.EventOps.API.sourcelink.json

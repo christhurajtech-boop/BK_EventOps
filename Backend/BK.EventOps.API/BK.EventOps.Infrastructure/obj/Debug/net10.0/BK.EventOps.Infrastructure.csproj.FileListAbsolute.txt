@@ -9,3 +9,10 @@ D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastru
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\refint\BK.EventOps.Infrastructure.dll
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.EventOps.Infrastructure.pdb
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\ref\BK.EventOps.Infrastructure.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\bin\Debug\net10.0\BK.EventOps.Common.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\bin\Debug\net10.0\BK.EventOps.Domain.dll
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\bin\Debug\net10.0\BK.EventOps.Common.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\bin\Debug\net10.0\BK.EventOps.Domain.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.EventOps.Infrastructure.csproj.AssemblyReference.cache
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.EventOps.Infrastructure.sourcelink.json
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Infrastructure\obj\Debug\net10.0\BK.Event.CAE209A1.Up2Date
