@@ -1,6 +1,8 @@
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\bin\Debug\net10.0\BK.EventOps.Domain.deps.json
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\bin\Debug\net10.0\BK.EventOps.Domain.runtimeconfig.json
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\bin\Debug\net10.0\BK.EventOps.Domain.dll
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\bin\Debug\net10.0\BK.EventOps.Domain.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\obj\Debug\net10.0\BK.EventOps.Domain.csproj.AssemblyReference.cache
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\obj\Debug\net10.0\BK.EventOps.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\obj\Debug\net10.0\BK.EventOps.Domain.AssemblyInfoInputs.cache
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\obj\Debug\net10.0\BK.EventOps.Domain.AssemblyInfo.cs
@@ -9,4 +11,5 @@ D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\ob
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\obj\Debug\net10.0\BK.EventOps.Domain.dll
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\obj\Debug\net10.0\refint\BK.EventOps.Domain.dll
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\obj\Debug\net10.0\BK.EventOps.Domain.pdb
+D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\obj\Debug\net10.0\BK.EventOps.Domain.genruntimeconfig.cache
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.Domain\obj\Debug\net10.0\ref\BK.EventOps.Domain.dll

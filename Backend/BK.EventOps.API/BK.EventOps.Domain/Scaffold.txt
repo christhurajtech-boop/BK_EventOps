@@ -1,0 +1,1 @@
+﻿dotnet ef dbcontext scaffold "Host=localhost;Port=5433;Database=bk_event_ops;Username=postgres;Password=postgres" Npgsql.EntityFrameworkCore.PostgreSQL --project . --startup-project ..\BK.EventOps.API --output-dir Persistence/Entities --context BkEventOpsDbContext --context-dir Persistence --data-annotations --no-onconfiguring --force
