@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Interface\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BK.EventOps.Common\BK.EventOps.Common.csproj" />
+    <ProjectReference Include="..\BK.EventOps.Domain\BK.EventOps.Domain.csproj" />
+    <ProjectReference Include="..\BK.EventOps.Infrastructure\BK.EventOps.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

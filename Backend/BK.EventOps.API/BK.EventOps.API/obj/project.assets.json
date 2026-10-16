@@ -52,6 +52,55 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "BK.EventOps.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BK.EventOps.Common": "1.0.0",
+          "BK.EventOps.Domain": "1.0.0",
+          "BK.EventOps.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BK.EventOps.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BK.EventOps.Application.dll": {}
+        }
+      },
+      "BK.EventOps.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BK.EventOps.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BK.EventOps.Common.dll": {}
+        }
+      },
+      "BK.EventOps.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BK.EventOps.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BK.EventOps.Domain.dll": {}
+        }
+      },
+      "BK.EventOps.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BK.EventOps.Common": "1.0.0",
+          "BK.EventOps.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BK.EventOps.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BK.EventOps.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -110,10 +159,31 @@
         "scalar.aspnetcore.2.18.0.nupkg.sha512",
         "scalar.aspnetcore.nuspec"
       ]
+    },
+    "BK.EventOps.Application/1.0.0": {
+      "type": "project",
+      "path": "../BK.EventOps.Application/BK.EventOps.Application.csproj",
+      "msbuildProject": "../BK.EventOps.Application/BK.EventOps.Application.csproj"
+    },
+    "BK.EventOps.Common/1.0.0": {
+      "type": "project",
+      "path": "../BK.EventOps.Common/BK.EventOps.Common.csproj",
+      "msbuildProject": "../BK.EventOps.Common/BK.EventOps.Common.csproj"
+    },
+    "BK.EventOps.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BK.EventOps.Domain/BK.EventOps.Domain.csproj",
+      "msbuildProject": "../BK.EventOps.Domain/BK.EventOps.Domain.csproj"
+    },
+    "BK.EventOps.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../BK.EventOps.Infrastructure/BK.EventOps.Infrastructure.csproj",
+      "msbuildProject": "../BK.EventOps.Infrastructure/BK.EventOps.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "BK.EventOps.Application >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 10.0.9",
       "Scalar.AspNetCore >= 2.18.0"
     ]
@@ -160,7 +230,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Christhu raj\\Project\\BKEventOps\\Backend\\BK.EventOps.API\\BK.EventOps.Application\\BK.EventOps.Application.csproj": {
+              "projectPath": "D:\\Christhu raj\\Project\\BKEventOps\\Backend\\BK.EventOps.API\\BK.EventOps.Application\\BK.EventOps.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

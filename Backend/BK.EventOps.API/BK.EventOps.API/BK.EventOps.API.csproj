@@ -15,4 +15,8 @@
     <PackageReference Include="Scalar.AspNetCore" Version="2.18.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BK.EventOps.Application\BK.EventOps.Application.csproj" />
+  </ItemGroup>
+
 </Project>

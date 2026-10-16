@@ -2,5 +2,6 @@
   <Project Path="BK.EventOps.API/BK.EventOps.API.csproj" />
   <Project Path="BK.EventOps.Application/BK.EventOps.Application.csproj" Id="219f6ab8-b5d2-4e01-8d85-5a5132a28d35" />
   <Project Path="BK.EventOps.Common/BK.EventOps.Common.csproj" Id="b412442d-44b7-4c29-a2e2-be0d0bfa29c7" />
+  <Project Path="BK.EventOps.Domain/BK.EventOps.Domain.csproj" Id="64422a52-e4b8-420e-8b8d-bc5a035f7106" />
   <Project Path="BK.EventOps.Infrastructure/BK.EventOps.Infrastructure.csproj" Id="434381ae-0391-46a0-98c4-636f082f7a40" />
 </Solution>

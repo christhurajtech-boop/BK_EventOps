@@ -1,11 +1,46 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "BK.EventOps.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BK.EventOps.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BK.EventOps.Common.dll": {}
+        }
+      },
+      "BK.EventOps.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BK.EventOps.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BK.EventOps.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "BK.EventOps.Common/1.0.0": {
+      "type": "project",
+      "path": "../BK.EventOps.Common/BK.EventOps.Common.csproj",
+      "msbuildProject": "../BK.EventOps.Common/BK.EventOps.Common.csproj"
+    },
+    "BK.EventOps.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BK.EventOps.Domain/BK.EventOps.Domain.csproj",
+      "msbuildProject": "../BK.EventOps.Domain/BK.EventOps.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "BK.EventOps.Common >= 1.0.0",
+      "BK.EventOps.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Britto\\.nuget\\packages\\": {},
@@ -49,7 +84,14 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Christhu raj\\Project\\BKEventOps\\Backend\\BK.EventOps.API\\BK.EventOps.Common\\BK.EventOps.Common.csproj": {
+              "projectPath": "D:\\Christhu raj\\Project\\BKEventOps\\Backend\\BK.EventOps.API\\BK.EventOps.Common\\BK.EventOps.Common.csproj"
+            },
+            "D:\\Christhu raj\\Project\\BKEventOps\\Backend\\BK.EventOps.API\\BK.EventOps.Domain\\BK.EventOps.Domain.csproj": {
+              "projectPath": "D:\\Christhu raj\\Project\\BKEventOps\\Backend\\BK.EventOps.API\\BK.EventOps.Domain\\BK.EventOps.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

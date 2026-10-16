@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BK.EventOps.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e87b8f67008438fa0378aff9ec9d6521a839058b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BK.EventOps.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BK.EventOps.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,4 +11,9 @@
     <Folder Include="Repositories\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BK.EventOps.Common\BK.EventOps.Common.csproj" />
+    <ProjectReference Include="..\BK.EventOps.Domain\BK.EventOps.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
