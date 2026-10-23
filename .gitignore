@@ -4,3 +4,10 @@
 
 /.vs
 /Backend/BK.EventOps.API/.vs
+/Backend/BK.EventOps.API/BK.EventOps.API/bin/Debug/net10.0
+/Backend/BK.EventOps.API/BK.EventOps.API/obj/Release/net10.0
+/Backend/BK.EventOps.API/BK.EventOps.Application/bin/Debug/net10.0
+/Backend/BK.EventOps.API/BK.EventOps.Application/obj/Release/net10.0
+/Backend/BK.EventOps.API/BK.EventOps.Domain/obj/Release/net10.0
+/Backend/BK.EventOps.API/BK.EventOps.Repository/obj/Release/net10.0
+/Backend/BK.EventOps.API/BK.EventOps.Services/obj/Release/net10.0
