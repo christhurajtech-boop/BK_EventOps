@@ -1,6 +1,6 @@
 using Dapper;
 
-namespace RebarPro.Infrastructure.Repositories
+namespace BK.EventOps.Infrastructure.Repositories
 {
     public class DBRepository<T> : IDBRepository<T> where T : class
     {

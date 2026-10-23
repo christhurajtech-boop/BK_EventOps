@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BK.EventOps.Application\BK.EventOps.Application.csproj" />
+    <ProjectReference Include="..\BK.EventOps.Common\BK.EventOps.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

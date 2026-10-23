@@ -1,10 +1,30 @@
+using BK.EventOps.API;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+        options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+    });
 
-builder.Services.AddControllers();
+// Setup Dependency Injection for EventOps Application & Infrastructure services
+builder.Services.DIServiceSetup();
+
+// Configure CORS for Frontend React Native / Web client access
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
@@ -15,15 +35,19 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
-//Scalar API Reference UI is available at the root path of the application
+
+// Scalar API Reference UI is available at the root path of the application
 app.MapScalarApiReference("/", options =>
 {
-    options.WithTitle("Hospital Management API");
+    options.WithTitle("BK EventOps API");
 });
+
+app.UseCors("AllowAll");
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
 app.Run();
