@@ -38,6 +38,16 @@ namespace BK.EventOps.Application.Services
             return _repository.ToggleEmployeeStatusAsync(employeeId, cancellationToken);
         }
 
+        public Task<EmployeeModel?> UpdateEmployeeStatusAsync(string employeeId, string status, CancellationToken cancellationToken = default)
+        {
+            return _repository.UpdateEmployeeStatusAsync(employeeId, status, cancellationToken);
+        }
+
+        public Task<bool> HasAttendanceForEmployeeAsync(string employeeId, CancellationToken cancellationToken = default)
+        {
+            return _repository.HasAttendanceForEmployeeAsync(employeeId, cancellationToken);
+        }
+
         public Task<bool> DeleteEmployeeAsync(string employeeId, CancellationToken cancellationToken = default)
         {
             return _repository.DeleteEmployeeAsync(employeeId, cancellationToken);
@@ -67,6 +77,11 @@ namespace BK.EventOps.Application.Services
         public Task<bool> DeleteEventAsync(string eventId, CancellationToken cancellationToken = default)
         {
             return _repository.DeleteEventAsync(eventId, cancellationToken);
+        }
+
+        public Task<bool> HasTransactionsForEventAsync(string eventId, CancellationToken cancellationToken = default)
+        {
+            return _repository.HasTransactionsForEventAsync(eventId, cancellationToken);
         }
 
         // --- Attendance ---
@@ -115,6 +130,11 @@ namespace BK.EventOps.Application.Services
         public Task<IEnumerable<SalaryPaymentModel>> GetSalaryPaymentsAsync(CancellationToken cancellationToken = default)
         {
             return _repository.GetAllSalaryPaymentsAsync(cancellationToken);
+        }
+
+        public Task<IEnumerable<SalaryPaymentModel>> GetSalaryPaymentsByEmployeeAsync(string employeeId, CancellationToken cancellationToken = default)
+        {
+            return _repository.GetSalaryPaymentsByEmployeeAsync(employeeId, cancellationToken);
         }
 
         public Task<SalaryPaymentModel> ProcessSalaryPayoutAsync(CreateSalaryPayoutRequest request, CancellationToken cancellationToken = default)

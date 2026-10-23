@@ -12,6 +12,8 @@ namespace BK.EventOps.Infrastructure.Interface
         Task<EmployeeModel?> GetEmployeeByIdAsync(string employeeId, CancellationToken cancellationToken = default);
         Task<EmployeeModel> UpsertEmployeeAsync(EmployeeModel employee, CancellationToken cancellationToken = default);
         Task<EmployeeModel?> ToggleEmployeeStatusAsync(string employeeId, CancellationToken cancellationToken = default);
+        Task<EmployeeModel?> UpdateEmployeeStatusAsync(string employeeId, string status, CancellationToken cancellationToken = default);
+        Task<bool> HasAttendanceForEmployeeAsync(string employeeId, CancellationToken cancellationToken = default);
         Task<bool> DeleteEmployeeAsync(string employeeId, CancellationToken cancellationToken = default);
 
         // Events
@@ -19,6 +21,7 @@ namespace BK.EventOps.Infrastructure.Interface
         Task<EventModel?> GetEventByIdAsync(string eventId, CancellationToken cancellationToken = default);
         Task<EventModel> UpsertEventAsync(EventModel eventModel, CancellationToken cancellationToken = default);
         Task<EventModel?> UpdateEventStatusAsync(string eventId, string status, CancellationToken cancellationToken = default);
+        Task<bool> HasTransactionsForEventAsync(string eventId, CancellationToken cancellationToken = default);
         Task<bool> DeleteEventAsync(string eventId, CancellationToken cancellationToken = default);
 
         // Attendance
@@ -35,6 +38,7 @@ namespace BK.EventOps.Infrastructure.Interface
 
         // Salary Payments
         Task<IEnumerable<SalaryPaymentModel>> GetAllSalaryPaymentsAsync(CancellationToken cancellationToken = default);
+        Task<IEnumerable<SalaryPaymentModel>> GetSalaryPaymentsByEmployeeAsync(string employeeId, CancellationToken cancellationToken = default);
         Task<SalaryPaymentModel> AddSalaryPaymentAsync(SalaryPaymentModel payment, CancellationToken cancellationToken = default);
     }
 }

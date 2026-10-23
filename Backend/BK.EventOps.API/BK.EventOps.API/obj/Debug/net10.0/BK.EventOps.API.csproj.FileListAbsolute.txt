@@ -125,7 +125,6 @@ D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\D
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\staticwebassets.development.json
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\swae.build.ex.cache
-D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\BK.Event.FA794D33.Up2Date
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\BK.EventOps.API.dll
 D:\Christhu raj\Project\BKEventOps\Backend\BK.EventOps.API\BK.EventOps.API\obj\Debug\net10.0\refint\BK.EventOps.API.dll

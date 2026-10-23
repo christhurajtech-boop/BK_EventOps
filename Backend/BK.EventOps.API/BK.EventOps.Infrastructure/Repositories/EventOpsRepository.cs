@@ -107,6 +107,23 @@ namespace BK.EventOps.Infrastructure.Repositories
             return Task.FromResult<EmployeeModel?>(null);
         }
 
+        public Task<EmployeeModel?> UpdateEmployeeStatusAsync(string employeeId, string status, CancellationToken cancellationToken = default)
+        {
+            if (_employees.TryGetValue(employeeId, out var emp))
+            {
+                emp.Status = status;
+                _employees[employeeId] = emp;
+                return Task.FromResult<EmployeeModel?>(emp);
+            }
+            return Task.FromResult<EmployeeModel?>(null);
+        }
+
+        public Task<bool> HasAttendanceForEmployeeAsync(string employeeId, CancellationToken cancellationToken = default)
+        {
+            var has = _attendances.Values.Any(a => a.EmployeeId == employeeId);
+            return Task.FromResult(has);
+        }
+
         public Task<bool> DeleteEmployeeAsync(string employeeId, CancellationToken cancellationToken = default)
         {
             var removed = _employees.TryRemove(employeeId, out _);
@@ -148,6 +165,12 @@ namespace BK.EventOps.Infrastructure.Repositories
             return Task.FromResult<EventModel?>(null);
         }
 
+        public Task<bool> HasTransactionsForEventAsync(string eventId, CancellationToken cancellationToken = default)
+        {
+            var has = _transactions.Values.Any(t => t.EventId == eventId);
+            return Task.FromResult(has);
+        }
+
         public Task<bool> DeleteEventAsync(string eventId, CancellationToken cancellationToken = default)
         {
             var removed = _events.TryRemove(eventId, out _);
@@ -170,7 +193,12 @@ namespace BK.EventOps.Infrastructure.Repositories
         {
             if (string.IsNullOrWhiteSpace(attendance.AttendanceId))
             {
-                attendance.AttendanceId = $"{attendance.EmployeeId}_{attendance.EventId}_{attendance.Date}";
+                attendance.AttendanceId = $"{attendance.EmployeeId}_{attendance.Date}";
+            }
+            // Monthly staff always store rate_applied = 0.00
+            if (_employees.TryGetValue(attendance.EmployeeId, out var emp) && emp.SalaryType == "monthly")
+            {
+                attendance.RateApplied = 0.00m;
             }
             _attendances[attendance.AttendanceId] = attendance;
             return Task.FromResult(attendance);
@@ -182,7 +210,11 @@ namespace BK.EventOps.Infrastructure.Repositories
             {
                 if (string.IsNullOrWhiteSpace(att.AttendanceId))
                 {
-                    att.AttendanceId = $"{att.EmployeeId}_{att.EventId}_{att.Date}";
+                    att.AttendanceId = $"{att.EmployeeId}_{att.Date}";
+                }
+                if (_employees.TryGetValue(att.EmployeeId, out var emp) && emp.SalaryType == "monthly")
+                {
+                    att.RateApplied = 0.00m;
                 }
                 _attendances[att.AttendanceId] = att;
             }
@@ -209,13 +241,25 @@ namespace BK.EventOps.Infrastructure.Repositories
             }
             _transactions[transaction.TransactionId] = transaction;
 
-            // Recompute event collected amount if this is an income transaction
+            // Recompute event collected amount and payment status if this is an income transaction
             if (!string.IsNullOrEmpty(transaction.EventId) && _events.TryGetValue(transaction.EventId, out var ev))
             {
                 var incomeSum = _transactions.Values
                     .Where(t => t.EventId == transaction.EventId && t.Type == "income")
                     .Sum(t => t.Amount);
                 ev.TotalAmountCollected = incomeSum;
+                if (ev.QuotedAmount > 0 && ev.TotalAmountCollected >= ev.QuotedAmount)
+                {
+                    ev.PaymentStatus = "paid";
+                }
+                else if (ev.TotalAmountCollected > 0)
+                {
+                    ev.PaymentStatus = "pending";
+                }
+                else
+                {
+                    ev.PaymentStatus = "unpaid";
+                }
                 ev.UpdatedAt = DateTime.UtcNow.ToString("o");
                 _events[transaction.EventId] = ev;
             }
@@ -233,6 +277,18 @@ namespace BK.EventOps.Infrastructure.Repositories
                         .Where(t => t.EventId == removed.EventId && t.Type == "income")
                         .Sum(t => t.Amount);
                     ev.TotalAmountCollected = incomeSum;
+                    if (ev.QuotedAmount > 0 && ev.TotalAmountCollected >= ev.QuotedAmount)
+                    {
+                        ev.PaymentStatus = "paid";
+                    }
+                    else if (ev.TotalAmountCollected > 0)
+                    {
+                        ev.PaymentStatus = "pending";
+                    }
+                    else
+                    {
+                        ev.PaymentStatus = "unpaid";
+                    }
                     ev.UpdatedAt = DateTime.UtcNow.ToString("o");
                     _events[removed.EventId] = ev;
                 }
@@ -245,6 +301,12 @@ namespace BK.EventOps.Infrastructure.Repositories
         public Task<IEnumerable<SalaryPaymentModel>> GetAllSalaryPaymentsAsync(CancellationToken cancellationToken = default)
         {
             return Task.FromResult<IEnumerable<SalaryPaymentModel>>(_salaryPayments.Values.OrderByDescending(s => s.PaidOn).ToList());
+        }
+
+        public Task<IEnumerable<SalaryPaymentModel>> GetSalaryPaymentsByEmployeeAsync(string employeeId, CancellationToken cancellationToken = default)
+        {
+            var list = _salaryPayments.Values.Where(s => s.EmployeeId == employeeId).OrderByDescending(s => s.PaidOn).ToList();
+            return Task.FromResult<IEnumerable<SalaryPaymentModel>>(list);
         }
 
         public Task<SalaryPaymentModel> AddSalaryPaymentAsync(SalaryPaymentModel payment, CancellationToken cancellationToken = default)

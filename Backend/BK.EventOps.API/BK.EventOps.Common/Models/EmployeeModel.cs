@@ -41,7 +41,20 @@ namespace BK.EventOps.Common.Models
         [JsonPropertyName("salaryType")]
         public string SalaryType { get; set; } = "daily"; // "daily" | "monthly"
 
+        [JsonPropertyName("salary_type")]
+        public string? SalaryTypeSnakeCase
+        {
+            get => SalaryType;
+            set { if (!string.IsNullOrEmpty(value)) SalaryType = value; }
+        }
+
         [JsonPropertyName("monthlySalary")]
         public decimal MonthlySalary { get; set; } = 0;
+    }
+
+    public class UpdateEmployeeStatusRequest
+    {
+        [JsonPropertyName("status")]
+        public string Status { get; set; } = string.Empty;
     }
 }

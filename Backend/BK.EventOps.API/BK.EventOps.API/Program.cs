@@ -34,17 +34,18 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    // Scalar API Reference UI is available in development
+    app.MapScalarApiReference("/", options =>
+    {
+        options.WithTitle("BK EventOps API");
+    });
+}
+else
+{
+    app.UseHttpsRedirection();
 }
 
-// Scalar API Reference UI is available at the root path of the application
-app.MapScalarApiReference("/", options =>
-{
-    options.WithTitle("BK EventOps API");
-});
-
 app.UseCors("AllowAll");
-
-app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
